@@ -1,0 +1,29 @@
+body{
+	font-family: 'tahoma';
+	font-size:15px; 
+	border-color:#fff;
+}
+
+.thumbnail{
+	border: 1px solid #eee;
+}
+
+.menLink{
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+}
+
+.loginbtn{
+	background-color: #5bb75b;
+	/*border-color:  #5bb75b;
+	border-radius: 5px;*/
+}
+
+#header{
+	background:url('imgs/headerba.png') repeat-x 0 0 #f7f7f7;
+	background-repeat: repeat-x;
+	height: 100%;
+	margin: 0px auto;
+	overflow: hidden
+}
