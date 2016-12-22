@@ -46,7 +46,7 @@ if(window.localStorage.length===0){
 	}
 }
 
-function addToCart(id,q){
+function addToCart(id,q,mon){
 	var obj = {}
 	var arr = carts.filter(function(elem,i){
 		return elem.id===id;
@@ -58,14 +58,30 @@ function addToCart(id,q){
 		if (arr1.length>0) {
 			alert('you added befor')
 		}else{
-			carts.filter(function(elem,i){
+			var oldqut = carts.filter(function(elem,i){
 				return elem.id===id;
-			})[0].Qty = q;
+			})[0].Qty;
+			var arr2 = products.filter(function(elem,i){
+				return elem.ID===Number(id);
+			});
+			var prodqoantmony = Number(arr2[0].Price.split(' ')[0]);
+			var oldSum = $('.totalMoney').first().text()
+			var newSum = (Number(oldSum) - (Number(prodqoantmony) * Number(oldqut)) + (Number(prodqoantmony) * Number(q)));
+			arr[0].Qty = q;
+			$('.totalMoney').text(newSum)
 		}
-		
 	}else{
 		obj['Qty'] = q;
 		obj.id = id;
 		carts.push(obj)
+		$('#cartsDetails').text('[ ' + carts.length + ' ] Itemes in your cart');
+		$('#cartsDetails1').text('[ ' + carts.length + ' ] Itemes in your cart');
+		var arr2 = products.filter(function(elem,i){
+			return elem.ID===Number(id);
+		});
+		var prodqoantmony = Number(arr2[0].Price.split(' ')[0]);
+		var oldSum = Number($('.totalMoney').first().text());
+		$('.totalMoney').text(oldSum + (prodqoantmony * Number(q)));
 	}
+
 }
