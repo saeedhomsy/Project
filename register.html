@@ -195,56 +195,57 @@
 		<div class="control-group">
 			<label class="control-label" for="inputFname1">Full name <sup>*</sup></label>
 			<div class="controls">
-				<input type="text" id="inputFname1" onclick="validate('inputFname1')" placeholder="Full Name">
+				<input type="text" id="inputFname1"  placeholder="Full Name">
 			</div>
 		</div>
 		<div class="control-group">
 			<label class="control-label" for="input_email">Email <sup>*</sup></label>
 			<div class="controls">
-				<input type="text" id="input_email" onclick="validate('input_email')" placeholder="Email">
+				<input type="text" id="input_email" placeholder="Email">
 			</div>
 		</div>	  
 		<div class="control-group">
 			<label class="control-label" for="inputPassword1">Password <sup>*</sup></label>
 			<div class="controls">
-				<input type="password" id="inputPassword1" onclick="validate('inputPassword1')" placeholder="Password">
+				<input type="password" id="inputPassword1" placeholder="Password">
 			</div>
 		</div>	  
 		<div class="control-group">
 			<label class="control-label" for="city">City<sup>*</sup></label>
 			<div class="controls">
-				<input type="text" id="city" onclick="validate('city')" placeholder="city"/> 
+				<input type="text" id="city" 
+				placeholder="city"/> 
 			</div>
 		</div>
-			<div class="control-group">
-				<label class="control-label" for="country">Country<sup>*</sup></label>
-				<div class="controls">
-					<select id="country" onclick="validate('country')" >
-						<option value="">-</option>
-						<option value="1">Jordan</option>
-						<option value="2">Syria</option>
-						<option value="3">KSA</option>
-					</select>
-				</div>
-			</div>	
-			<div class="control-group">
-				<label class="control-label" for="mobile">Mobile Phone </label>
-				<div class="controls">
-					<input type="text"  name="mobile" id="mobile" onclick="validate('mobile')" placeholder="Mobile Phone"/> 
-				</div>
+		<div class="control-group">
+			<label class="control-label" for="country">Country<sup>*</sup></label>
+			<div class="controls">
+				<select id="country" >
+					<option value="">-</option>
+					<option value="Jordan">Jordan</option>
+					<option value="Syria">Syria</option>
+					<option value="KSA">KSA</option>
+				</select>
 			</div>
+		</div>	
+		<div class="control-group">
+			<label class="control-label" for="mobile">Mobile Phone </label>
+			<div class="controls">
+				<input type="text"  name="mobile" id="mobile"  placeholder="Mobile Phone"/> 
+			</div>
+		</div>
 
-			<p><sup>*</sup>Required field	</p>
+		<p><sup>*</sup>Required field	</p>
 
-			<div class="control-group">
-				<div class="controls">
-					<input type="hidden" name="email_create" value="1">
-					<input type="hidden" name="is_new_customer" value="1">
-					<input class="btn btn-large btn-success" type="button" onclick="validate(['city','mobile','inputPassword1','input_email','inputFname1','country'])" value="Register" />
-				</div>
-			</div>		
-		</form>
-	</div>
+		<div class="control-group">
+			<div class="controls">
+				<input type="hidden" name="email_create" value="1">
+				<input type="hidden" name="is_new_customer" value="1">
+				<input class="btn btn-large btn-success" type="button" onclick="validate(['city','mobile','inputPassword1','input_email','inputFname1','country'],true,'','index.html')" value="Register" />
+			</div>
+		</div>		
+	</form>
+</div>
 
 </div>
 </div>
@@ -353,5 +354,6 @@
 </div>
 <span id="themesBtn"></span>
 <script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="db.js"></script>
 </body>
 </html>

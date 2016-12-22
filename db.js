@@ -448,3 +448,7 @@ var productspcifications = [
 }
 ]
 
+// for (var i = 0; i < users.length; i++) {
+// 	window.localStorage[users[i]['UserName' + i]] = users[0];
+// }
+// /window.localStorage.users = users
