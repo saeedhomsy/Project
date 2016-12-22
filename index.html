@@ -25,7 +25,7 @@
 		<div id="header">
 			<div class="container">
 				<div id="welcomeLine" class="row">
-					<div class="span6" id='userlbl'>Welcome!<strong> <span id='setUserName' ></span></strong></div>
+					<div class="span6" id='userlbl' style="display: none">Welcome!<strong> Mohannad Bakkar <span id='setUserName' ></span></strong></div>
 					<div class="span6">
 						<div class="pull-right">
 							<a href="product_summary.html"><span class="">Fr</span></a>
@@ -64,7 +64,7 @@
 							<li class=""><a href="normal.html">Delivery</a></li>
 							<li class=""><a href="contact.html">Contact</a></li>
 							<li class="">
-								<a href="#login" role="button" data-toggle="modal" style="padding-right:0"><span class="btn btn-large btn-success">Login</span></a>
+								<!-- <a href="#login" role="button" data-toggle="modal" style="padding-right:0"><span class="btn btn-large btn-success">Login</span></a> -->
 								<div id="login" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="false" >
 									<div class="modal-header">
 										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
@@ -98,7 +98,7 @@
 		<div id="carouselBlk">
 			<div id="myCarousel" class="carousel slide">
 				<div class="carousel-inner">
-					<div class="item active">
+					<!-- <div class="item active">
 						<div class="container">
 							<a href="register.html"><img style="width:100%" src="themes/images/carousel/1.png" alt="special offers"/></a>
 							<div class="carousel-caption">
@@ -106,8 +106,8 @@
 								<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
 							</div>
 						</div>
-					</div>
-					<div class="item">
+					</div> -->
+					<div class="item active">
 						<div class="container">
 							<a href="register.html"><img style="width:100%" src="themes/images/carousel/2.png" alt=""/></a>
 							<div class="carousel-caption">
@@ -230,7 +230,7 @@
 							<div class="row-fluid">
 								<div id="featured" class="carousel slide">
 									<div class="carousel-inner">
-										<div class="item active">
+										<!-- <div class="item active">
 											<ul class="thumbnails">
 												<li class="span3">
 													<div class="thumbnail">
@@ -273,8 +273,8 @@
 													</div>
 												</li>
 											</ul>
-										</div>
-										<div class="item">
+										</div> -->
+										<div class="item active">
 											<ul class="thumbnails">
 												<li class="span3">
 													<div class="thumbnail">
@@ -406,70 +406,86 @@
 						<ul class="thumbnails">
 							<li class="span3">
 								<div class="thumbnail">
-									<a  href="product_details.html"><img src="http://www.thetruthaboutcars.com/wp-content/uploads/2014/11/2016-mazda6-2014-la-auto-show-01-550x365.jpg" alt=""/></a>
+									<img src="http://www.thetruthaboutcars.com/wp-content/uploads/2014/11/2016-mazda6-2014-la-auto-show-01-550x365.jpg" style="height: 200px; width: 500px" alt=""/></a>
 									<div class="caption">
 										<h5>Mazda zoom 6</h5>
-										<h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" onclick="doPop(5)">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$222.00</a></h4>
+										<h4 style="text-align:center"><a class="btn" > <i class="icon-zoom-in"></i></a> <a class="btn" onclick="doPop(6)">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$50000</a></h4>
 									</div>
 								</div>
 							</li>
 							<li class="span3">
 								<div class="thumbnail">
-									<a  href="product_details.html"><img src="themes/images/products/7.jpg" alt=""/></a>
+									<img src="http://www.cstatic-images.com/stock/900x600/238592.jpg" style="height: 200px; width: 500px" alt=""/></a>
 									<div class="caption">
-										<h5>Product name</h5>
-										<p> 
-											Lorem Ipsum is simply dummy text. 
-										</p>
-										<h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$222.00</a></h4>
+										<h5>Toyota Camry</h5>
+										<h4 style="text-align:center"><a class="btn" onclick="doPop(5)">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$16000</a></h4>
 									</div>
 								</div>
 							</li>
 							<li class="span3">
 								<div class="thumbnail">
-									<a  href="product_details.html"><img src="themes/images/products/8.jpg" alt=""/></a>
+									<img src="http://motoring.li.csnstatic.com/motoring/general/editorial/Land-Rover-RR-Evoque-TD4-002.jpg?width=1024" style="height: 200px; width: 500px" alt=""/></a>
 									<div class="caption">
-										<h5>Product name</h5>
-										<p> 
-											Lorem Ipsum is simply dummy text. 
-										</p>
-										<h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$222.00</a></h4>
+										<h5>Range Rover Evoque</h5>
+										<h4 style="text-align:center"><i class="icon-zoom-in"></i></a> <a class="btn" onclick="doPop(2)">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$200000</a></h4>
 									</div>
 								</div>
 							</li>
 							<li class="span3">
 								<div class="thumbnail">
-									<a  href="product_details.html"><img src="themes/images/products/9.jpg" alt=""/></a>
+									<img src="http://www.7mobile.de/handy-news/wp-content/uploads/2015/02/apple-iphone-6-plus-64-gb-gold_z2.jpg" style="height: 250px; width: 500px" alt=""/></a>
 									<div class="caption">
-										<h5>Product name</h5>
-										<p> 
-											Lorem Ipsum is simply dummy text. 
-										</p>
-										<h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$222.00</a></h4>
+										<h5>Iphone 6 plus</h5>
+										<h4 style="text-align:center"><i class="icon-zoom-in"></i></a> <a class="btn" onclick="doPop(9)">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$499</a></h4>
 									</div>
 								</div>
 							</li>
 							<li class="span3">
 								<div class="thumbnail">
-									<a  href="product_details.html"><img src="themes/images/products/10.jpg" alt=""/></a>
+									<img src="http://cdn2.gsmarena.com/vv/pics/apple/apple-iphone-6-1.jpg" style="height: 250px; width: 500px" alt=""/></a>
 									<div class="caption">
-										<h5>Product name</h5>
-										<p> 
-											Lorem Ipsum is simply dummy text. 
-										</p>
-										<h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$222.00</a></h4>
+										<h5>Iphone 6</h5>
+										
+										<h4 style="text-align:center"><i class="icon-zoom-in"></i></a> <a class="btn" onclick="doPop(10)">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$449</a></h4>
 									</div>
 								</div>
 							</li>
 							<li class="span3">
 								<div class="thumbnail">
-									<a  href="product_details.html"><img src="themes/images/products/11.jpg" alt=""/></a>
+									<img src="http://cdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s7-edge-2.jpg" style="height: 250px; width: 450px" alt=""/></a>
 									<div class="caption">
-										<h5>Product name</h5>
-										<p> 
-											Lorem Ipsum is simply dummy text. 
-										</p>
-										<h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$222.00</a></h4>
+										<h5>Samsung galaxy s7</h5>
+										<h4 style="text-align:center"><i class="icon-zoom-in"></i></a> <a class="btn" onclick="doPop(7)">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" >$250</a></h4>
+									</div>
+								</div>
+							</li>
+							<li class="span3">
+								<div class="thumbnail">
+									<img src="https://i.ytimg.com/vi/HTTbVygKrP4/maxresdefault.jpg" style="height: 200px; width: 500px" alt=""/></a>
+									<div class="caption">
+										<h5>Audi R8 V10</h5>
+										
+										<h4 style="text-align:center"><i class="icon-zoom-in"></i></a> <a class="btn" onclick="doPop(4)">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$100000</a></h4>
+									</div>
+								</div>
+							</li>
+							<li class="span3">
+								<div class="thumbnail">
+									<img src="http://3.bp.blogspot.com/-jvKNkaLfV8Q/VKxZrgBcN-I/AAAAAAAAATQ/7e8-s1dPel0/s1600/17075098351722183686.jpg" style="height: 200px; width: 500px" alt=""/></a>
+									<div class="caption">
+										<h5>Mercides G class 550 AMG</h5>
+										
+										<h4 style="text-align:center"><i class="icon-zoom-in"></i></a> <a class="btn" onclick="doPop(3)">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$250000</a></h4>
+									</div>
+								</div>
+							</li>
+							<li class="span3">
+								<div class="thumbnail">
+									<img src="http://3.bp.blogspot.com/-jvKNkaLfV8Q/VKxZrgBcN-I/AAAAAAAAATQ/7e8-s1dPel0/s1600/17075098351722183686.jpg" style="height: 200px; width: 500px" alt=""/></a>
+									<div class="caption">
+										<h5>Mercides G class 550 AMG</h5>
+										
+										<h4 style="text-align:center"><i class="icon-zoom-in"></i></a> <a class="btn" onclick="doPop(3)">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$250000</a></h4>
 									</div>
 								</div>
 							</li>
@@ -645,6 +661,8 @@
 			document.getElementById('ProdID').value=y
 			// alert(CatID)
 		}
+
+		document.getElementById('userlbl').style.display='Block'
 	</script>
 </body>
 </html>
